@@ -9,11 +9,11 @@
         <p>Si scriva uno script che, dato un numero in virgola mobile, visualizzi parte intera e parte frazionaria, separate.</p>
         <hr>
         <?php
-            $phi = 100.144;
+            $num = M_PI;
 
-            echo "Numero: $phi <br />";
-            echo "<br />Parte intera: " . floor($phi);
-            echo "<br />Parte decimale: " . $phi - floor($phi);
+            echo "Numero: $num <br />";
+            echo "<br />Parte intera: " . floor($num);
+            echo "<br />Parte decimale: " . $num - floor($num);
         ?>
     </body>
 </html>

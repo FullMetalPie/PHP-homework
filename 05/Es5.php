@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Esercizio x | Pietri Andrea 5AI</title>
+        <title>Esercizio 5 | Pietri Andrea 5AI</title>
         <meta charset="UTF-8" />
     </head>
     <body>
-        <h1>Esercizio x</h1>
+        <h1>Esercizio 5</h1>
         <p>Scrivere uno script che, dato un numero con almeno 4 cifre decimali, lo approssimi alla terza cifra
         decimale sempre per difetto.<br />Es.: 123.45678 → 123.456</p>
         <hr>

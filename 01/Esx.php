@@ -9,7 +9,7 @@
         <p>traccia</p>
         <hr>
         <?php
-            //Esercizio
+            //negro
         ?>
     </body>
 </html>

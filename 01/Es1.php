@@ -18,7 +18,7 @@
             $variabileScambio = $variabile1;
             $variabile1 = $variabile2;
             $variabile2 = $variabileScambio;
-            echo "<br />Variabile A = $variabile1, variabile B = $variabile2.";
+            echo "<br />Variabile A = $variabile1, variabile B = $variabile2."; 
         ?>
     </body>
 </html>

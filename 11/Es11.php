@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Esercizio x | Pietri Andrea 5AI</title>
+        <title>Esercizio 11 | Pietri Andrea 5AI</title>
         <meta charset="UTF-8" />
     </head>
     <body>
-        <h1>Esercizio x</h1>
-        <p>traccia</p>
+        <h1>Esercizio 11</h1>
+        <p>Convertire in binario (su 8 bit) un numero intero in base 10 compreso fra 2 e 255 (inclusi).</p>
         <hr>
         <?php
+            $num = 255;
+            $numBIN = decbin($num);
+
+            echo "Numero in base decimale: $num<br / >";
+            echo "<br />Numero in binario: $numBIN";
         ?>
     </body>
 </html>

@@ -15,8 +15,8 @@
         </p>
         <hr>
         <?php
-            $num1 = 10;
-            $num2 = 6;
+            $num1 = 8;
+            $num2 = 92;
 
             $s = $num1 + $num2;
             $d = abs($num1 - $num2);
@@ -26,7 +26,7 @@
 
             echo "<br />1. Somma dei numeri (S): $s";
             echo "<br />2. Valore assoluto della differenza (D): $d";
-            echo "<br />3. Numero piu' piccolo ((S - D)) / 2 ): " . ($s - $d) / 2;
+            echo "<br />3. Numero pi&ugrave; piccolo ((S - D)) / 2 ): " . ($s - $d) / 2;
         ?>
     </body>
 </html>

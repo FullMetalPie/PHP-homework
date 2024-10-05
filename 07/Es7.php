@@ -9,11 +9,11 @@
         <p>Effettuare la divisione fra due numeri interi, stampando separatamente quoziente e resto.</p>
         <hr>
         <?php
-            $num1 = 16;
-            $num2 = 9;
+            $num1 = 7;
+            $num2 = 3;
 
             echo "Numero A: $num1;<br />Numero B: $num2.<br />";
-            echo "<br />Quoziente: " . number_format(($num1 / $num2), 2);
+            echo "<br />Quoziente: " . (int)($num1 / $num2);
             echo "<br />Resto: " . $num1 % $num2;
         ?>
     </body>

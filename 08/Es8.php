@@ -10,10 +10,10 @@
         differenti.</p>
         <hr>
         <?php
-            $num = 420;
+            $num = 427;
             $primaCifra = floor($num / 100);
             $secondaCifra = floor(($num - ($primaCifra) * 100) / 10);
-            $terzaCifra = floor($num - (($primaCifra * 100) + ($secondaCifra * 10)));
+            $terzaCifra = $num % 10;
 
             echo "Numero: $num<br />";
             echo "<br />Prima cifra: " . $primaCifra;

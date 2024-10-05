@@ -7,7 +7,7 @@
     <body>
         <h1>Esercizio 9</h1>
         <p>Siano dati due numeri interi di due cifre ab e cd, dove ogni lettera rappresenta nell’ordine una singola cifra (se ab è pari a 74, a vale 7 e b vale 4). 
-            <br />Moltiplicare fra di loro i due numeri implementando l’algoritmo di Karatsuba:<br /> ab · cd = a · c · 10^2 + (a · c + b · d - (a - b) · (c - d)) · 10 + b · d</p>
+            <br />Moltiplicare fra di loro i due numeri implementando l’algoritmo di Karatsuba:<br /> ab · cd = a · c · 10<sup>2</sup> + (a · c + b · d - (a - b) · (c - d)) · 10 + b · d</p>
         <hr>
         <?php
             $numAB = 11;

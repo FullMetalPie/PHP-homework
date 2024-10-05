@@ -9,7 +9,7 @@
         <p>Convertire in binario (su 8 bit) un numero intero in base 10 compreso fra 2 e 255 (inclusi).</p>
         <hr>
         <?php
-            $num = 255;
+            $num = 6;
             $numBIN = decbin($num);
 
             echo "Numero in base decimale: $num<br / >";

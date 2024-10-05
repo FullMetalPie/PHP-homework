@@ -22,9 +22,9 @@
             echo "Numero 4: $num4;<br />";
             echo "Numero 5: $num5;<br />";
 
-            
+            $denominatore = ((1 / $num1) + (1/ $num2) + (1/ $num3) + (1/ $num4) + (1/ $num5) / 5);
 
-            echo "<br />Media armonica: "
+            echo "<br />Media armonica: " . number_format((1 / $denominatore), 2);
         ?>
     </body>
 </html>

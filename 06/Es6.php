@@ -12,10 +12,10 @@
         <?php
             $prezzo = 141.50;
 
-            echo "Prezzo: $prezzo $<br />";
-            echo "<br />Sconto 10%: " . $prezzo - ((10 * $prezzo) / 100) . " $";
-            echo "<br />Sconto 25%: " . $prezzo - ((25 * $prezzo) / 100) . " $";
-            echo "<br />Sconto 33%: " . $prezzo - ((33 * $prezzo) / 100) . " $";
+            echo "Prezzo: $prezzo &#8364<br />";
+            echo "<br />Sconto 10%: " . $prezzo - ((10 * $prezzo) / 100) . " &#8364";
+            echo "<br />Sconto 25%: " . $prezzo - ((25 * $prezzo) / 100) . " &#8364";
+            echo "<br />Sconto 33%: " . $prezzo - ((33 * $prezzo) / 100) . " &#8364";
         ?>
     </body>
 </html>

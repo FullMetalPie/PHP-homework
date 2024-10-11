@@ -13,7 +13,7 @@
             $numBIN = decbin($num);
 
             echo "Numero in base decimale: $num<br / >";
-            echo "<br />Numero in binario: $numBIN";
+            echo "<br />Numero in binario: " . sprintf("%08d", $numBIN);
         ?>
     </body>
-</html>
+</html> 

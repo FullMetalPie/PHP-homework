@@ -7,7 +7,9 @@
     <body>
         <h1>Esercizio 27</h1>
         <p>Fornita una data in formato numerico, comprendendo anche il giorno della settimana,
-        determinare quella successiva, senza considerare l’anno. Es.:</p>
+        determinare quella successiva, senza considerare l’anno. Es.:<br />
+            Lunedì 31/10 &rarr; Martedì 01/11
+        </p>
         <hr />
         <?php
         $mese = random_int(1, 12);

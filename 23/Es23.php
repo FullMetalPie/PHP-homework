@@ -10,13 +10,16 @@
         <hr />
         <?php
         $num = random_int(2, 10);
+        $fattoriale = $num;
 
-        echo "<p>$num! = </p>" . fattoriale($num);
-
-        function fattoriale($num) {
-            //continuare
-            return fattoriale($num);
+        echo "<p>$num! = ";
+        
+        while ($num - 1 != 0) {
+            $fattoriale = $fattoriale * ($num - 1);
+            $num--;
         }
+        
+        echo "$fattoriale</p>";
         ?>
     </body>
 </html>

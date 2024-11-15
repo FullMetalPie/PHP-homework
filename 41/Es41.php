@@ -17,21 +17,22 @@
         echo "<p>Frase: <strong>" . $str . "<br /></strong>";
 
         for ($i = 0; $i < mb_strlen($str); $i++) {
-            switch (strtolower($str[$i])) {
-                case "a":
-                case "e":
-                case "i":
-                case "o":
-                case "u":
-                    $contatoreVocali++;
-                    break;
-                default:
-                    if ($str[$i] != " " && $str[$i] != "'") {
+            if (strtolower($str[$i]) >= "a" && strtolower($str[$i]) <= "z") {
+                switch ($str[$i]) {
+                    case "a":
+                    case "e":
+                    case "i":
+                    case "o":
+                    case "u":
+                        $contatoreVocali++;
+                        break;
+                    default:
                         $contatoreConsonanti++;
-                    }
-                    break;
+                        break;
+                }
             }
         }
+        
         echo "<br />Vocali: " . $contatoreVocali . ";<br />Consonanti: " . $contatoreConsonanti . "</p>"
         ?>
     </body>

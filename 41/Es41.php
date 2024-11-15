@@ -11,14 +11,16 @@
         <hr />
         <?php
         $str = "Si sta come d'autunno sugli alberi le foglie";
+        $arr = mb_str_split($str);
+
         $contatoreConsonanti = 0;
         $contatoreVocali = 0;
 
         echo "<p>Frase: <strong>" . $str . "<br /></strong>";
 
         for ($i = 0; $i < mb_strlen($str); $i++) {
-            if (strtolower($str[$i]) >= "a" && strtolower($str[$i]) <= "z") {
-                switch ($str[$i]) {
+            if (strtolower($arr[$i]) >= "a" && strtolower($arr[$i]) <= "z") {
+                switch ($arr[$i]) {
                     case "a":
                     case "e":
                     case "i":

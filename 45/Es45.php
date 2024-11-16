@@ -12,11 +12,14 @@ numero naturale (con almeno 5 cifre) è ondulante.</p>
         <hr />
         <?php
         $num = 56565;
+        
+        if (strlen("$num") % 2) {
+            $num .= "$num"[1];
+        }
+
         $arr = mb_str_split($num, 2);
 
         echo "<p>Numero: " . $num . "<br />";
-
-        //Da fare: controllo per numeri non con 6 cifre
 
         if (max($arr) == min($arr)) {
             echo "Numero ondulante.";

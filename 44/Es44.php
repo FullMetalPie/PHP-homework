@@ -10,10 +10,31 @@
         <hr />
         <?php
         $arr = [];
+        $arrExclude = [];
 
-        for ($i = 0; ) {
+        $arr[0] = random_int(1, 10);
+        $arrExclude[0] = $arr[0];
 
+        for ($i = 1; $i < 10; $i++) {
+            $arr[$i] = random_int(1, 10);
+
+            $j = 0;
+            echo $i . " - " . $j;
+            while ($arr[$i] != $arrExclude[$j]) {
+                $j++;
+                echo $j;
+            }
+
+            if ($j < count($arr)) {
+                $i--;
+            } else {
+                $arrExclude[$j] = $arr[$i];
+            }
         }
+
+        print_r($arr);
+        echo "<br />";
+        print_r($arrExclude);
         ?>
     </body>
 </html>

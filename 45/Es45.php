@@ -22,9 +22,9 @@ numero naturale (con almeno 5 cifre) è ondulante.</p>
         echo "<p>Numero: " . $num . "<br />";
 
         if (max($arr) == min($arr)) {
-            echo "Numero ondulante.";
+            echo "Numero ondulante.</p>";
         } else {
-            echo "Numero non ondulante.";
+            echo "Numero non ondulante.</p>";
         }
         ?>
     </body>

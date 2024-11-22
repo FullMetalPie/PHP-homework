@@ -20,24 +20,58 @@
 
         echo "<p><strong>Stringa da manipolare:</strong> " . $str . "<br />";
 
-        $str = str_replace(",", " ", $str);
-        $str = str_replace(";", " ", $str);
-        $str = str_replace(".", " ", $str);
-        $str = str_replace(":", " ", $str);
-        $str = str_replace("!", " ", $str);
-        $str = str_replace("?", " ", $str);
+        $str = str_replace(",", "", $str);
+        $str = str_replace(";", "", $str);
+        $str = str_replace(".", "", $str);
+        $str = str_replace(":", "", $str);
+        $str = str_replace("!", "", $str);
+        $str = str_replace("?", "", $str);
 
+        $str = trim($str);
         $arr = explode(" ", $str);
 
         for ($i = 0; $i < count($arr); $i++) {
             if (strtolower($arr[$i]) > "z" || strtolower($arr[$i]) < "a") {
-                $arr[$i] = " ";
+                unset($arr[$i]);
             }
         }
 
         echo "<strong>Stringa senza punteggiatura e caratteri multibyte:</strong> " .  implode(" ", $arr) . "<br />";
+        echo "<ul>";
 
-        
+        //1. Sostituzione parola piu' lunga con "smurf"
+
+        $arrTemp = $arr;
+
+        $maxLen = 0; //lunghezza stringa
+        $j = 0;
+
+        foreach ($arrTemp as $c) {
+            if (strlen($c) > $maxLen) {
+                $j = $i;
+            }
+        }
+
+        $arrTemp[$j] = "smurf";
+        echo "<li>" . implode(" ", $arrTemp) . "</li>";
+
+        //2. Concatenazione primi 2 e gli ultimi 3 caratteri di ogni parola
+
+        $arrTemp = $arr;
+
+        echo "<li><strong>Non sono riuscito a farlo</strong></li>";
+
+        //3. Sostituzione vocali con 'a'
+
+        $arrTemp = implode(" ", $arr);
+
+        $arrTemp = str_replace("e", "a", $arrTemp);
+        $arrTemp = str_replace("i", "a", $arrTemp);
+        $arrTemp = str_replace("o", "a", $arrTemp);
+        $arrTemp = str_replace("u", "a", $arrTemp);
+
+        echo "<li>" . $arrTemp . "</li>";
+
         ?>
     </body>
 </html>

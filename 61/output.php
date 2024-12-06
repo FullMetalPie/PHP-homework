@@ -70,15 +70,6 @@
         };
 
         echo $class . "</p>";
-
-        /*if ($valido) {
-            if ($_DATA["primo"] >= 0 && $_DATA["primo"] < 127) {
-                echo "classe A.";
-            } else if ($_DATA["primo"] >= 128 && $_DATA["primo"] < 191) {
-                echo "classe B.";
-            }
-        }*/
-        
         ?>
     </body>
 </html>

@@ -13,7 +13,7 @@
         <form name="dati" action="output.php" method="post">
             <fieldset style="width:fit-content">
                 <lable><strong>Indirizzo IPv4:</strong></lable><br />
-                <input type="number" name="primo" min="0" max="255" placeholder="0" />.
+                <input type="number" name="primo" min="1" max="255" placeholder="0"/>.
                 <input type="number" name="secondo" min="0" max="255" placeholder="0" />.
                 <input type="number" name="terzo" min="0" max="255" placeholder="0" />.
                 <input type="number" name="quarto" min="0" max="255" placeholder="0" />

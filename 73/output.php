@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Esercizio 61 | Pietri Andrea 5AI</title>
+        <title>Esercizio 73 | Pietri Andrea 5AI</title>
         <meta charset="UTF-8" />
         <style>
             table {
@@ -14,7 +14,7 @@
         </style>
     </head>
     <body>
-        <h1>Esercizio 61</h1>
+        <h1>Esercizio 73</h1>
         <h2 style="font-style: oblique; color: blue">Ricezione dati</h2>
         <p>Una società di statistica intende realizzare un’applicazione Web per la raccolta di alcuni dati
             personali di studenti universitari emiliani del primo anno. Sono richiesti:

@@ -9,9 +9,6 @@
                 width: fit-content;
                 padding: 10px;
             }
-            label {
-                font-weight: bold;
-            }
         </style>
     </head>
     <body>
@@ -40,54 +37,59 @@
             <fieldset>
                 <legend>Dati personali</legend>
                 <!--Età-->
-                <label>Età</label><br />
-                <input type="number" name="age" min="18" placeholder="18 anni" required="required" /><br />
+                <label>Età<br />
+                    <input type="number" name="age" min="18" placeholder="18 anni" required="required" /><br />
+                </label>    
                 <!--Sesso-->
-                <label>Sesso</label><br />
-                <input type="radio" name="sex" value="Maschio" required="required" />Maschio<br />
-                <input type="radio" name="sex" value="Femmina" required="required" />Femmina<br />
-                <input type="radio" name="sex" value="Non specificato" required="required" />Preferisco non specificarlo<br />
+                <label>Sesso<br />
+                    <input type="radio" name="sex" value="Maschio" required="required" />Maschio<br />
+                    <input type="radio" name="sex" value="Femmina" required="required" />Femmina<br />
+                    <input type="radio" name="sex" value="Non specificato" required="required" />Preferisco non specificarlo<br />
+                </label>
             </fieldset>
             <fieldset>
                 <legend>Dati universitari</legend>
                 <!--Università-->
-                <label>Università di appartenenza</label><br />
-                <select name="university">
-                    <option value="Bologna">Bologna</option>
-                    <option value="Bologna">Parma</option>
-                    <option value="Bologna">Modena - Reggio Emilia</option>
-                    <option value="Bologna">Ferrara</option>
-                </select><br />
+                <label>Università di appartenenza<br />
+                    <select name="university">
+                        <option value="Bologna">Bologna</option>
+                        <option value="Parma">Parma</option>
+                        <option value="Modena - Reggio Emilia">Modena - Reggio Emilia</option>
+                        <option value="Ferrara">Ferrara</option>
+                    </select>
+                </label><br />
                 <!--Esame di stato-->
-                <label>Voto Esame di Stato</label><br />
-                <input type="number" name="esameStato" min="60" max="100" placeholder="60" required="required" />
+                <label>Voto Esame di Stato<br />
+                    <input type="number" name="esameStato" min="60" max="100" placeholder="60" required="required" />
+                </label>
                 <input type="checkbox" name="lodeStato" value= "con lode" >Lode<br />
                 <!--Voti ultimi 5 esami-->
-                <label>Voti degli ultimi 5 esami,<br /> con relativi crediti</label><br />
-                <!--Esame 1-->
-                <input type="number" name="esame[]" min="18" max="30" placeholder="60" />
-                <input type="number" name="crediti[]" min="1" max="10" placeholder="1" required= "required" />
-                <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
-                <!--Esame 2-->
-                <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
-                <input type="number" name="crediti[]" min="1" max="10" placeholder="1" required= "required" />
-                <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
-                <!--Esame 3-->
-                <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
-                <input type="number" name="crediti[]" min="1" max="10" placeholder="1" required= "required" />
-                <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
-                <!--Esame 4-->
-                <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
-                <input type="number" name="crediti[]" min="1" max="10" placeholder="1" required= "required" />
-                <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
-                <!--Esame 5-->
-                <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
-                <input type="number" name="crediti[]" min="1" max="10" placeholder="1" required= "required" />
-                <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                <label>Voti degli ultimi 5 esami, con relativi crediti<br />
+                    <!--Esame 1-->
+                    <input type="number" name="esame[]" min="18" max="30" placeholder="60" />
+                    <input type="number" name="crediti[]" min="0" max="10" placeholder="1" required= "required" />
+                    <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                    <!--Esame 2-->
+                    <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
+                    <input type="number" name="crediti[]" min="0" max="10" placeholder="1" required= "required" />
+                    <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                    <!--Esame 3-->
+                    <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
+                    <input type="number" name="crediti[]" min="0" max="10" placeholder="1" required= "required" />
+                    <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                    <!--Esame 4-->
+                    <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
+                    <input type="number" name="crediti[]" min="0" max="10" placeholder="1" required= "required" />
+                    <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                    <!--Esame 5-->
+                    <input type="number" name="esame[]" min="18" max="30" placeholder="60"  />
+                    <input type="number" name="crediti[]" min="0" max="10" placeholder="1" required= "required" />
+                    <input type="checkbox" name="lode[]" value= "con lode" >Lode<br />
+                </label>
                 <!--Dati personali-->
                 <hr />
-                Accetto al trattamento dei dati personali.<br/>
-                <input type="checkbox" name="personal_data" value="si">Accetto</input>
+                Acconsento al trattamento dei dati personali.<br/>
+                <input type="checkbox" name="personal_data" value="si" required="required">Accetto</input>
             </fieldset>
             <input type="submit" name="submit" value="Invio" />
         </form>
